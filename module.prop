@@ -1,6 +1,6 @@
 id=hypercore_chenfeng
 name=HyperCore
-version=v5.0
-versionCode=5
+version=v6.0
+versionCode=6
 author=Sourabh
-description=Maximum performance and low latency optimization for Xiaomi 14 Civi (chenfeng).
+description=Balanced optimization for Xiaomi 14 Civi (chenfeng) — max touch response, smooth UI, cool CPU.
