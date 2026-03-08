@@ -1,0 +1,104 @@
+<!--
+ HyperCore v3.0 — GamePowerOptFeature.xml
+ Changes from v2.1:
+   - Removed Genshin Impact from IgnoredApps on cliffs (was excluded from optimization!)
+   - Kept aggressive FPS thresholds and PID tuning from v2.1
+   - Kept jank rescue enabled
+-->
+<Feature>
+   <Name>GamePowerOptFeature</Name>
+   <Libname>libgamepoweroptfeature.so</Libname>
+   <Configs target = "cliffs">
+        <!-- v5.0: Tighter FPS thresholds — detect frame drops earlier -->
+        <FPS_30_THRESHOLD>0.05, 0.2, 0.05, 0.0</FPS_30_THRESHOLD>
+        <FPS_35_THRESHOLD>0.05, 0.2, 0.05, 0.0</FPS_35_THRESHOLD>
+        <FPS_40_THRESHOLD>0.05, 0.2, 0.05, 0.0</FPS_40_THRESHOLD>
+        <FPS_60_THRESHOLD>0.1, 0.3, 0.1, 0.0</FPS_60_THRESHOLD>
+        <FPS_90_THRESHOLD>0.3, 0.8, 0.15, 0.0</FPS_90_THRESHOLD>
+        <FPS_120_THRESHOLD>0.3, 0.8, 0.15, 0.0</FPS_120_THRESHOLD>
+        <FPS_144_THRESHOLD>0.3, 0.8, 0.15, 0.0</FPS_144_THRESHOLD>
+        <FPS_MAX_THRESHOLD>144</FPS_MAX_THRESHOLD>
+        <!-- v5.0: More aggressive PID — faster freq ramp on frame miss -->
+        <PID_Parameters_Up>15, 3, 8, 30, 300, 0.4</PID_Parameters_Up>
+        <PID_Parameters_Down>8, 2, 4, 30, 300, 0.2</PID_Parameters_Down>
+        <!-- v5.0: 100ms sampling — 2.5x faster reaction than stock 250ms -->
+        <SAMPLE_CALL_INTERVAL_MSEC>100</SAMPLE_CALL_INTERVAL_MSEC>
+        <MAX_SAMPLE_NUM>15</MAX_SAMPLE_NUM>
+        <!-- v5.0: Faster FPS stability detection -->
+        <FPS_STABLE_CNT>12</FPS_STABLE_CNT>
+        <Freq_Drop_Bottom_ThresholdRatio>5</Freq_Drop_Bottom_ThresholdRatio>
+        <MIN_MAX_CAP_RANGE_DOWN>1</MIN_MAX_CAP_RANGE_DOWN>
+        <MIN_MAX_CAP_RANGE_UP>1</MIN_MAX_CAP_RANGE_UP>
+        <Algo_Engine>Algo_PID</Algo_Engine>
+        <!-- v5.0: Jank rescue with tighter detection -->
+        <JANKRESCUE_ENABLE>1</JANKRESCUE_ENABLE>
+        <JANKRESCUE_LOG_ENABLE>0</JANKRESCUE_LOG_ENABLE>
+        <JANKRESCUE_TRACE_ENABLE>0</JANKRESCUE_TRACE_ENABLE>
+        <JANK_WORKLOAD_ZONE_FACTOR>15</JANK_WORKLOAD_ZONE_FACTOR>
+        <JANK_FILTERING_COEFFICIENT>20</JANK_FILTERING_COEFFICIENT>
+        <JANK_SET_THRESHOLD>1</JANK_SET_THRESHOLD>
+        <JANK_RESET_THRESHOLD>-1</JANK_RESET_THRESHOLD>
+        <TPLOAD_LIGHT_THRESHOLD>0</TPLOAD_LIGHT_THRESHOLD>
+    </Configs>
+   <Configs>
+        <FPS_30_THRESHOLD>0.1, 0.3, 0.1, 0.0</FPS_30_THRESHOLD>
+        <FPS_35_THRESHOLD>0.1, 0.3, 0.1, 0.0</FPS_35_THRESHOLD>
+        <FPS_40_THRESHOLD>0.1, 0.3, 0.1, 0.0</FPS_40_THRESHOLD>
+        <FPS_60_THRESHOLD>0.1, 0.5, 0.1, 0.0</FPS_60_THRESHOLD>
+        <FPS_90_THRESHOLD>0.5, 1.0, 0.2, 0.0</FPS_90_THRESHOLD>
+        <FPS_120_THRESHOLD>0.5, 1.0, 0.2, 0.0</FPS_120_THRESHOLD>
+        <FPS_144_THRESHOLD>0.5, 1.0, 0.2, 0.0</FPS_144_THRESHOLD>
+        <FPS_MAX_THRESHOLD>144</FPS_MAX_THRESHOLD>
+        <PID_Parameters_Up>10, 2, 5, 30, 300, 0.3</PID_Parameters_Up>
+        <PID_Parameters_Down>10, 2, 5, 30, 300, 0.3</PID_Parameters_Down>
+        <SAMPLE_CALL_INTERVAL_MSEC>250</SAMPLE_CALL_INTERVAL_MSEC>
+        <MAX_SAMPLE_NUM>10</MAX_SAMPLE_NUM>
+        <FPS_STABLE_CNT>20</FPS_STABLE_CNT>
+        <Freq_Drop_Bottom_ThresholdRatio>10</Freq_Drop_Bottom_ThresholdRatio>
+        <MIN_MAX_CAP_RANGE_DOWN>1</MIN_MAX_CAP_RANGE_DOWN>
+        <MIN_MAX_CAP_RANGE_UP>1</MIN_MAX_CAP_RANGE_UP>
+        <Algo_Engine>Algo_PID</Algo_Engine>
+        <JANKRESCUE_ENABLE>1</JANKRESCUE_ENABLE>
+        <JANKRESCUE_LOG_ENABLE>0</JANKRESCUE_LOG_ENABLE>
+        <JANKRESCUE_TRACE_ENABLE>0</JANKRESCUE_TRACE_ENABLE>
+        <JANK_WORKLOAD_ZONE_FACTOR>20</JANK_WORKLOAD_ZONE_FACTOR>
+        <JANK_FILTERING_COEFFICIENT>30</JANK_FILTERING_COEFFICIENT>
+        <JANK_SET_THRESHOLD>1</JANK_SET_THRESHOLD>
+        <JANK_RESET_THRESHOLD>-1</JANK_RESET_THRESHOLD>
+        <TPLOAD_LIGHT_THRESHOLD>0</TPLOAD_LIGHT_THRESHOLD>
+    </Configs>
+    <Profiles>
+        <Profile target = "cliffs">
+        <FREQ_MAX_Enable>1, 1, 1</FREQ_MAX_Enable>
+        <FREQ_MIN_Enable>1, 1, 1</FREQ_MIN_Enable>
+        <SCALING_MAX_FREQ>0x40804100, 0x40804000, 0x40804200</SCALING_MAX_FREQ>
+        <SCALING_MIN_FREQ>0x40800100, 0x40800000, 0x40800200</SCALING_MIN_FREQ>
+        <GPU_FREQ_MAX_Enable>1</GPU_FREQ_MAX_Enable>
+        <GPU_FREQ_MIN_Enable>1</GPU_FREQ_MIN_Enable>
+        <GPU_MIN_FREQ>0X4280C000</GPU_MIN_FREQ>
+        <GPU_MAX_FREQ>0X42810000</GPU_MAX_FREQ>
+        </Profile>
+        <Profile>
+        <FREQ_MAX_Enable>1, 1, 1, 1</FREQ_MAX_Enable>
+        <FREQ_MIN_Enable>1, 1, 1, 1</FREQ_MIN_Enable>
+        <SCALING_MAX_FREQ>0x40804100, 0x40804000, 0x40804300, 0x40804200</SCALING_MAX_FREQ>
+        <SCALING_MIN_FREQ>0x40800100, 0x40800000, 0x40800300, 0x40800200</SCALING_MIN_FREQ>
+        <GPU_FREQ_MAX_Enable>1</GPU_FREQ_MAX_Enable>
+        <GPU_FREQ_MIN_Enable>1</GPU_FREQ_MIN_Enable>
+        <GPU_MIN_FREQ>0X4280C000</GPU_MIN_FREQ>
+        <GPU_MAX_FREQ>0X42810000</GPU_MAX_FREQ>
+        </Profile>
+    </Profiles>
+    <!-- HYPERCORE v3.0: Genshin REMOVED from IgnoredApps on cliffs -->
+    <IgnoredApps target = "cliffs">
+        <App1></App1>
+        <App2></App2>
+    </IgnoredApps>
+    <IgnoredApps>
+        <App1></App1>
+        <App2></App2>
+    </IgnoredApps>
+    <Trigger>
+        <AsyncId>0x00001001, 0x00001002, 0x00001003, 0x00001004</AsyncId>
+    </Trigger>
+</Feature>

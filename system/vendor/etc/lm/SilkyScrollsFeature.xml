@@ -1,0 +1,53 @@
+<!--
+ HyperCore v5.0 — SilkyScrollsFeature.xml
+ Even more aggressive IPC/freq thresholds for SM8635 (cliffs)
+ v5.0: Lower IPC thresholds + higher target freq = instant scroll boost
+-->
+<Feature>
+    <Name>SilkyScrolls</Name>
+    <Configs target="cliffs">
+        <FPS>60,75,90,120,144,180,240</FPS>
+        <FPS60>0,700,50,1200,80,1800</FPS60>
+        <FPS75>0,700,50,1200,80,1800</FPS75>
+        <FPS90>0,800,40,1400,70,2000</FPS90>
+        <FPS120>0,900,30,1600,60,2200</FPS120>
+        <FPS144>0,1000,30,1600,60,2400</FPS144>
+        <FPS180>0,1000,30,1600,60,2400</FPS180>
+        <FPS240>0,1000,30,1600,60,2400</FPS240>
+    </Configs>
+    <Configs>
+        <FPS>60,75,90,120,144,180,240</FPS>
+        <FPS60>0,700,50,1200,80,1800</FPS60>
+        <FPS75>0,700,50,1200,80,1800</FPS75>
+        <FPS90>0,800,40,1400,70,2000</FPS90>
+        <FPS120>0,900,30,1600,60,2200</FPS120>
+        <FPS144>0,1000,30,1600,60,2400</FPS144>
+        <FPS180>0,1000,30,1600,60,2400</FPS180>
+        <FPS240>0,1000,30,1600,60,2400</FPS240>
+    </Configs>
+    <Libname>libsilkyscrolls.so</Libname>
+    <Triggers>
+        <Trigger>
+            <Primary>true</Primary>
+            <AsyncId>VENDOR_HINT_SCROLL_BOOST</AsyncId>
+            <AsyncType>1</AsyncType>
+        </Trigger>
+        <Trigger>
+            <Primary>true</Primary>
+            <AsyncId>VENDOR_HINT_SCROLL_BOOST</AsyncId>
+            <AsyncType>2</AsyncType>
+        </Trigger>
+        <Trigger>
+            <Primary>true</Primary>
+            <AsyncId>VENDOR_HINT_DRAG_START</AsyncId>
+        </Trigger>
+        <Trigger>
+            <Primary>true</Primary>
+            <AsyncId>VENDOR_HINT_DRAG_END</AsyncId>
+        </Trigger>
+        <Trigger>
+            <Primary>true</Primary>
+            <AsyncId>VENDOR_HINT_APP_WORKLOAD_TYPE</AsyncId>
+        </Trigger>
+    </Triggers>
+</Feature>

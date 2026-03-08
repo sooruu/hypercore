@@ -1,0 +1,38 @@
+<!--
+ HyperCore v3.0 — PowerFeatureConfig.xml
+ Changes from stock:
+   - VideoPowerOptFeature: 0 → 1 (optimize video playback power)
+   - VendorScenarioPowerOptFeature: 0 → 1 (vendor scenario optimization)
+   - GamePowerOptFeature: 1 (kept enabled)
+   - OffScreenPowerOptFeature: 1 (kept enabled)
+-->
+<PowerFeature>
+    <Feature>
+        <Name>PSMPowerOptFeature</Name>
+        <Enable>0</Enable>
+    </Feature>
+    <Feature>
+        <Name>VideoPowerOptFeature</Name>
+        <Enable>1</Enable>
+    </Feature>
+    <Feature>
+        <Name>StandbyFeature</Name>
+        <Enable>0</Enable>
+    </Feature>
+    <Feature>
+        <Name>VendorScenarioPowerOptFeature</Name>
+        <Enable>1</Enable>
+    </Feature>
+    <Feature>
+        <Name>AODPowerOptFeature</Name>
+        <Enable>0</Enable>
+    </Feature>
+    <Feature>
+        <Name>GamePowerOptFeature</Name>
+        <Enable>1</Enable>
+    </Feature>
+    <Feature>
+        <Name>OffScreenPowerOptFeature</Name>
+        <Enable>1</Enable>
+    </Feature>
+</PowerFeature>
