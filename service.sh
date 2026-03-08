@@ -187,4 +187,14 @@ done
 w /proc/sys/kernel/random/read_wakeup_threshold 64
 w /proc/sys/kernel/random/write_wakeup_threshold 128
 
+# ============================================================
+# 14. THERMAL THROTTLING HEADROOM
+# ============================================================
+# Reduce thermal polling frequency so the CPU doesn't aggressively
+# micro-throttle over brief temperature spikes (e.g., loading a level).
+# Provides sustained burst potential while keeping the device safe.
+for tz in /sys/class/thermal/thermal_zone*/polling_delay_passive; do
+    w "$tz" 2000
+done
+
 # DONE
