@@ -26,7 +26,7 @@ p "  ╚█████╔╝╚█████╔╝██║░░██║█
 p "  ░╚════╝░░╚════╝░╚═╝░░╚═╝╚══════╝........."
 ui_print " "
 p "  ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔"
-p "          v1.0 ⚡ AUTHOR: SOURABH"
+p "          v6.1 ⚡ AUTHOR: SOURABH"
 p "  ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔"
 ui_print " "
 
@@ -35,7 +35,7 @@ p_slow "  [+] Bypassing root detection..."
 p_slow "  [+] Injecting magic mounts..."
 ui_print " "
 
-p_slow "  >>> COMPILING KERNEL TWEAKS <<<"
+p_slow "  >>> COMPILING BALANCED KERNEL TWEAKS <<<"
 ui_print " "
 
 # Modern Progress bar using Unicode block characters
@@ -55,9 +55,9 @@ ui_print "  Progress: [███████████████████
 sleep 0.5
 ui_print " "
 
-p_slow "  [✓] CPU Governor zero-latency tuned"
-p_slow "  [✓] Game threads pinned to Big/Prime cores"
-p_slow "  [✓] Adreno 735 Max Perf unleashed"
+p_slow "  [✓] CPU thermal headroom configured"
+p_slow "  [✓] Deep sleep (C-states) safely enabled"
+p_slow "  [✓] GPU battery drain limits enforced"
 p_slow "  [✓] Touch sampling locked at 240Hz"
 ui_print " "
 
