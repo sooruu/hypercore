@@ -16,8 +16,8 @@
       <FpsMap minFps="52" maxFps="68" appFps="60" refreshRate="120" qsync="true" vsyncMove="3000000" early="1000000" late="6000000" slack="500000" maxLatency="0"/>
     </SmomoMode>
     <SmomoMode id="3" name="game_60">
-      <FpsMap minFps="52" maxFps="68" appFps="60" refreshRate="120" qsync="true" bypass="true" vsyncMove="3000000" early="1000000" late="6000000" slack="500000"/>
-      <FpsMap minFps="25" maxFps="38" appFps="30" refreshRate="120" qsync="true" vsyncMove="3000000" early="1000000" late="6000000" slack="500000" maxLatency="0"/>
+      <FpsMap minFps="52" maxFps="68" appFps="60" refreshRate="60" qsync="true" bypass="true" vsyncMove="1000000" early="500000" late="3000000" slack="100000"/>
+      <FpsMap minFps="25" maxFps="38" appFps="30" refreshRate="60" qsync="true" vsyncMove="1000000" early="500000" late="3000000" slack="100000" maxLatency="0"/>
     </SmomoMode>
   </SmomoModeList>
 
@@ -26,19 +26,19 @@
       <LayerApp name="camera">
         <AppLayer name="SurfaceView[com.sample.camera/com.android.camera.CameraActivity](BLAST)#0" type="camera" strategy="default" enable="true"/>
       </LayerApp>
-      <!-- BGMI: 120fps mode — bypass at 120Hz (1:1 frame:refresh, zero overhead) -->
+      <!-- BGMI: 60fps mode — mode 3 (60 FPS) -->
       <LayerApp name="bgmi">
-        <AppLayer name="SurfaceView[com.pubg.imobile/com.epicgames.ue4.SplashActivity](BLAST)#0" type="game" strategy="mode" mode="1" variation="0.6" samples="8" enable="true"/>
-        <AppLayer name="SurfaceView[com.pubg.imobile/com.epicgames.ue4.GameActivity](BLAST)#0" type="game" strategy="mode" mode="1" variation="0.6" samples="8" enable="true"/>
+        <AppLayer name="SurfaceView[com.pubg.imobile/com.epicgames.ue4.SplashActivity](BLAST)#0" type="game" strategy="mode" mode="3" variation="0.6" samples="8" enable="true"/>
+        <AppLayer name="SurfaceView[com.pubg.imobile/com.epicgames.ue4.GameActivity](BLAST)#0" type="game" strategy="mode" mode="3" variation="0.6" samples="8" enable="true"/>
       </LayerApp>
       <!-- PUBG Global -->
       <LayerApp name="pubg_global">
-        <AppLayer name="SurfaceView[com.tencent.ig/com.epicgames.ue4.SplashActivity](BLAST)#0" type="game" strategy="mode" mode="1" variation="0.6" samples="8" enable="true"/>
-        <AppLayer name="SurfaceView[com.tencent.ig/com.epicgames.ue4.GameActivity](BLAST)#0" type="game" strategy="mode" mode="1" variation="0.6" samples="8" enable="true"/>
+        <AppLayer name="SurfaceView[com.tencent.ig/com.epicgames.ue4.SplashActivity](BLAST)#0" type="game" strategy="mode" mode="3" variation="0.6" samples="8" enable="true"/>
+        <AppLayer name="SurfaceView[com.tencent.ig/com.epicgames.ue4.GameActivity](BLAST)#0" type="game" strategy="mode" mode="3" variation="0.6" samples="8" enable="true"/>
       </LayerApp>
       <!-- Generic game template -->
       <LayerApp name="game">
-        <AppLayer name="SurfaceView[com.sample.game/com.sample.game.GameActivity](BLAST)#0" type="game" strategy="mode" mode="1" variation="0.6" samples="8" enable="true"/>
+        <AppLayer name="SurfaceView[com.sample.game/com.sample.game.GameActivity](BLAST)#0" type="game" strategy="mode" mode="3" variation="0.6" samples="8" enable="true"/>
       </LayerApp>
     </LayerWhiteList>
   </SmoMoWhiteList>

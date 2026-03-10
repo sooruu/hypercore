@@ -43,14 +43,14 @@
         <ProactiveEngine>1</ProactiveEngine>
     </Configs>
     <Configs target="cliffs">
-        <STUTTER_SCALE>3</STUTTER_SCALE>
+        <STUTTER_SCALE>1</STUTTER_SCALE>
         <THERMAL_MONITOR>0</THERMAL_MONITOR>
         <THERMAL_MONITOR_RULES></THERMAL_MONITOR_RULES>
-        <!-- v5.0: Tighter FPS thresholds — react to even 0.1 frame deviation -->
-        <FPS_30_THRESHOLD>0.05, 0.2, 0.05</FPS_30_THRESHOLD>
-        <FPS_35_THRESHOLD>0.05, 0.2, 0.05</FPS_35_THRESHOLD>
-        <FPS_40_THRESHOLD>0.05, 0.2, 0.05</FPS_40_THRESHOLD>
-        <FPS_60_THRESHOLD>0.1, 0.3, 0.1</FPS_60_THRESHOLD>
+        <!-- v6.3: Ultra-Tight FPS thresholds for 60fps lock -->
+        <FPS_30_THRESHOLD>0.05, 0.1, 0.05</FPS_30_THRESHOLD>
+        <FPS_35_THRESHOLD>0.05, 0.1, 0.05</FPS_35_THRESHOLD>
+        <FPS_40_THRESHOLD>0.05, 0.1, 0.05</FPS_40_THRESHOLD>
+        <FPS_60_THRESHOLD>0.05, 0.1, 0.05</FPS_60_THRESHOLD>
         <FPS_90_THRESHOLD>0.3, 0.8, 0.15</FPS_90_THRESHOLD>
         <FPS_120_THRESHOLD>0.3, 0.8, 0.15</FPS_120_THRESHOLD>
         <FPS_144_THRESHOLD>0.3, 0.8, 0.15</FPS_144_THRESHOLD>

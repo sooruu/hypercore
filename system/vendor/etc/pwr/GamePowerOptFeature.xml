@@ -17,7 +17,7 @@
         <FPS_90_THRESHOLD>0.3, 0.8, 0.15, 0.0</FPS_90_THRESHOLD>
         <FPS_120_THRESHOLD>0.3, 0.8, 0.15, 0.0</FPS_120_THRESHOLD>
         <FPS_144_THRESHOLD>0.3, 0.8, 0.15, 0.0</FPS_144_THRESHOLD>
-        <FPS_MAX_THRESHOLD>144</FPS_MAX_THRESHOLD>
+        <FPS_MAX_THRESHOLD>60</FPS_MAX_THRESHOLD>
         <!-- v5.0: More aggressive PID — faster freq ramp on frame miss -->
         <PID_Parameters_Up>15, 3, 8, 30, 300, 0.4</PID_Parameters_Up>
         <PID_Parameters_Down>8, 2, 4, 30, 300, 0.2</PID_Parameters_Down>

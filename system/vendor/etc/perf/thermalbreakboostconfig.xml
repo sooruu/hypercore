@@ -27,17 +27,17 @@
                 Target1="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"
                 Target2="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"/>
                 <Child Trig="41000"
-                Target0="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"
-                Target1="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"
-                Target2="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"/>
+                Target0="boost:1 cpu0:1612800 cpu2:2016000 cpu5:2016000 cpu7:2208000"
+                Target1="boost:1 cpu0:1612800 cpu2:2016000 cpu5:2016000 cpu7:2208000"
+                Target2="boost:1 cpu0:1612800 cpu2:2016000 cpu5:2016000 cpu7:2208000"/>
                 <Child Trig="43000"
-                Target0="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"
-                Target1="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"
-                Target2="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"/>
+                Target0="boost:1 cpu0:1440000 cpu2:1804800 cpu5:1804800 cpu7:1804800"
+                Target1="boost:1 cpu0:1440000 cpu2:1804800 cpu5:1804800 cpu7:1804800"
+                Target2="boost:1 cpu0:1440000 cpu2:1804800 cpu5:1804800 cpu7:1804800"/>
                 <Child Trig="45000"
-                Target0="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"
-                Target1="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"
-                Target2="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"/>
+                Target0="boost:1 cpu0:1228800 cpu2:1440000 cpu5:1440000 cpu7:1440000"
+                Target1="boost:1 cpu0:1228800 cpu2:1440000 cpu5:1440000 cpu7:1440000"
+                Target2="boost:1 cpu0:1228800 cpu2:1440000 cpu5:1440000 cpu7:1440000"/>
         </Config>
         <Config Scence="1">
                 <Child Trig="35000"
@@ -53,17 +53,17 @@
                 Target1="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"
                 Target2="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"/>
                 <Child Trig="41000"
-                Target0="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"
-                Target1="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"
-                Target2="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"/>
+                Target0="boost:1 cpu0:1612800 cpu2:2016000 cpu5:2016000 cpu7:2208000"
+                Target1="boost:1 cpu0:1612800 cpu2:2016000 cpu5:2016000 cpu7:2208000"
+                Target2="boost:1 cpu0:1612800 cpu2:2016000 cpu5:2016000 cpu7:2208000"/>
                 <Child Trig="43000"
-                Target0="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"
-                Target1="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"
-                Target2="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"/>
+                Target0="boost:1 cpu0:1440000 cpu2:1804800 cpu5:1804800 cpu7:1804800"
+                Target1="boost:1 cpu0:1440000 cpu2:1804800 cpu5:1804800 cpu7:1804800"
+                Target2="boost:1 cpu0:1440000 cpu2:1804800 cpu5:1804800 cpu7:1804800"/>
                 <Child Trig="45000"
-                Target0="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"
-                Target1="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"
-                Target2="boost:1 cpu0:2016000 cpu2:2803200 cpu5:2803200 cpu7:3014400"/>
+                Target0="boost:1 cpu0:1228800 cpu2:1440000 cpu5:1440000 cpu7:1440000"
+                Target1="boost:1 cpu0:1228800 cpu2:1440000 cpu5:1440000 cpu7:1440000"
+                Target2="boost:1 cpu0:1228800 cpu2:1440000 cpu5:1440000 cpu7:1440000"/>
         </Config>
     </ScrollBoost>
 </BoostConfigs>
