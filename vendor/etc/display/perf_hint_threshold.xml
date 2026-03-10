@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+ HyperCore v5.0 — Ultra-low perf hint thresholds
+ Threshold = number of consecutive heavy frames before boost kicks in
+ Lower = boost triggers sooner = fewer dropped frames
+ v5.0: version 1 (default) now at 2-3 (was 4-3), version 2 stays at 1 (instant)
+-->
+<LargeCompPerfHintThreshold>
+  <DeviceThresholdList>
+    <DefaultDevice version="1"/>
+      <Device version="1">
+        <FpsThresholdMap fps="120" PerfHintThreshold="2"/>
+        <FpsThresholdMap fps="144" PerfHintThreshold="2"/>
+        <FpsThresholdMap fps="180" PerfHintThreshold="2"/>
+        <FpsThresholdMap fps="244" PerfHintThreshold="1"/>
+      </Device>
+      <Device version="2">
+        <FpsThresholdMap fps="120" PerfHintThreshold="1"/>
+        <FpsThresholdMap fps="144" PerfHintThreshold="1"/>
+        <FpsThresholdMap fps="180" PerfHintThreshold="1"/>
+        <FpsThresholdMap fps="244" PerfHintThreshold="1"/>
+      </Device>
+      <Device version="3">
+        <FpsThresholdMap fps="120" PerfHintThreshold="1"/>
+        <FpsThresholdMap fps="144" PerfHintThreshold="1"/>
+        <FpsThresholdMap fps="180" PerfHintThreshold="1"/>
+        <FpsThresholdMap fps="244" PerfHintThreshold="1"/>
+      </Device>
+  </DeviceThresholdList>
+</LargeCompPerfHintThreshold>

@@ -26,39 +26,32 @@ p "  ╚█████╔╝╚█████╔╝██║░░██║█
 p "  ░╚════╝░░╚════╝░╚═╝░░╚═╝╚══════╝........."
 ui_print " "
 p "  ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔"
-p "          v6.1 ⚡ AUTHOR: SOURABH"
+p "          v6.4 ⚡ AUTHOR: SOURABH"
 p "  ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔"
 ui_print " "
 
 p_slow "  [+] Initializing environment..."
 p_slow "  [+] Bypassing root detection..."
 p_slow "  [+] Injecting magic mounts..."
-ui_print " "
 
+# Set standard permissions for XML files
+ui_print "  [+] Setting XML permissions (644)..."
+set_perm_recursive $MODPATH/vendor 0 0 0755 0644
+set_perm_recursive $MODPATH/product 0 0 0755 0644
+
+ui_print " "
 p_slow "  >>> COMPILING BALANCED KERNEL TWEAKS <<<"
 ui_print " "
 
-# Modern Progress bar using Unicode block characters
-ui_print "  Progress: [██░░░░░░░░░░░░░░░░░░] 10%"
-sleep 0.2
-ui_print "  Progress: [█████░░░░░░░░░░░░░░░] 25%"
-sleep 0.2
-ui_print "  Progress: [████████░░░░░░░░░░░░] 40%"
-sleep 0.3
-ui_print "  Progress: [███████████░░░░░░░░░] 60%"
-sleep 0.2
-ui_print "  Progress: [██████████████░░░░░░] 75%"
-sleep 0.3
-ui_print "  Progress: [██████████████████░░] 90%"
-sleep 0.2
+# Progress bar animation
 ui_print "  Progress: [████████████████████] 100%"
 sleep 0.5
 ui_print " "
 
 p_slow "  [✓] CPU thermal headroom configured"
-p_slow "  [✓] Deep sleep (C-states) safely enabled"
-p_slow "  [✓] GPU battery drain limits enforced"
-p_slow "  [✓] Touch sampling locked at 240Hz"
+p_slow "  [✓] iOS-Style Frame Sync active"
+p_slow "  [✓] Locked 60Hz/60FPS applied"
+p_slow "  [✓] System props injected"
 ui_print " "
 
 p_slow "  ----------------------------------------"

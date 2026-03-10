@@ -1,0 +1,10 @@
+# HyperCore v6.4 (iOS 60FPS Profile)
+# Force system to recognize modified XMLs
+ro.vendor.qti.sdk.perfboost=1
+ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.perf.scroll_boost=1
+ro.vendor.perf.scroll_boost_fps=60
+ro.vendor.display.refresh_rate=60
+# Disable thermal throttling in framework
+persist.vendor.powerhal.thermal.throttle=0
+persist.sys.perf_profile=high_performance
