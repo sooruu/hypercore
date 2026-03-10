@@ -1,0 +1,11 @@
+<Feature>
+    <Name>APEngine</Name>
+    <Configs target="cliffs">
+        <STUTTER_SCALE>1</STUTTER_SCALE>
+        <FPS_60_THRESHOLD>0.05, 0.1, 0.05</FPS_60_THRESHOLD>
+        <BIG_CLUSTER_ID>3,4,5,6,7</BIG_CLUSTER_ID>
+        <AdaptiveEngine>1</AdaptiveEngine>
+        <PredictiveEngine>1</PredictiveEngine>
+        <ProactiveEngine>1</ProactiveEngine>
+    </Configs>
+</Feature>

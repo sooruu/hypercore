@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<SmomoSetting>
+  <SmomoModeList>
+    <SmomoMode id="3" name="game_60">
+      <FpsMap minFps="52" maxFps="68" appFps="60" refreshRate="60" qsync="true" bypass="true" vsyncMove="1000000" early="500000" late="3000000" slack="100000"/>
+      <FpsMap minFps="25" maxFps="38" appFps="30" refreshRate="60" qsync="true" vsyncMove="1000000" early="500000" late="3000000" slack="100000" maxLatency="0"/>
+    </SmomoMode>
+  </SmomoModeList>
+  <SmoMoWhiteList>
+    <LayerWhiteList>
+      <LayerApp name="bgmi">
+        <AppLayer name="SurfaceView[com.pubg.imobile/com.epicgames.ue4.SplashActivity](BLAST)#0" type="game" strategy="mode" mode="3" variation="0.6" samples="8" enable="true"/>
+        <AppLayer name="SurfaceView[com.pubg.imobile/com.epicgames.ue4.GameActivity](BLAST)#0" type="game" strategy="mode" mode="3" variation="0.6" samples="8" enable="true"/>
+      </LayerApp>
+      <LayerApp name="pubg_global">
+        <AppLayer name="SurfaceView[com.tencent.ig/com.epicgames.ue4.SplashActivity](BLAST)#0" type="game" strategy="mode" mode="3" variation="0.6" samples="8" enable="true"/>
+        <AppLayer name="SurfaceView[com.tencent.ig/com.epicgames.ue4.GameActivity](BLAST)#0" type="game" strategy="mode" mode="3" variation="0.6" samples="8" enable="true"/>
+      </LayerApp>
+    </LayerWhiteList>
+  </SmoMoWhiteList>
+</SmomoSetting>

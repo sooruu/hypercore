@@ -1,8 +1,4 @@
 <?xml version="1.0" ?>
-<!--
-    HyperCore EXTREME Performance - NO FPS THROTTLING
-    Always 120Hz (device max) regardless of thermal level
--->
 <ThermalLevelToFPSMap>
     <DeviceSettingList>
         <DefaultDevice version="1"/>
